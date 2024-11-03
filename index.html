@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+    *{
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    nav{
+        background-color: brown;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    li{
+        position: relative;
+    }
+    a{
+color: white;
+text-decoration: none;
+padding: 15px 20px;
+display: block;
+    }
+    a:hover{
+        background-color: rgb(32, 26, 26);
+    }
+    .submenu{
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        background-color: brown;
+        display: none;
+        min-width: 150px;
+    }
+.submenu li{
+    width: 100%;
+    
+}
+/*mostrar el submenu al pasar el cursor*/
+.btn-desplegable:hover .submenu{
+
+
+    display: block;
+}
+section{
+    margin-top: 30px;
+width: 400px;
+height: 500px;
+border-radius: 9px;
+background-color: brown;
+margin-left: 30px;
+justify-content: center;
+display: flex;
+}
+img{
+
+    display: flex;
+    border-radius: 8px;
+
+}
+section:hover{
+    width: 30%;
+    height: 80%;
+    transition: 5s;
+    display: flex;
+    position: absolute;
+    
+}
+.texto1{
+    margin-top: -80px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    position: relative;
+    padding-left:160px ;
+    font-size: x-large;
+    text-shadow: 80px 80px 80px black;
+}
+.texto2{
+    color: aliceblue;
+    display: flex;
+    position: relative;
+    padding-left:20px ;
+    margin-top: -20px;
+}
+
+
+ </style>
+</head>
+
+<body>
+    <nav>
+       <ul>
+        <li><a href="#inicio"> Inicio</a></li>
+        <li class="btn-desplegable">
+            <a href="#productos"> Productos <i class="fa fa-caret-down"></i> </a>
+            <ul class="submenu">
+                <li><a href="#botas">Botas</a></li>
+                <li><a href="#tenis">Tenis</a></li>
+                <li><a href="#hua">Huaraches</a></li>
+            </ul>
+        </li>
+        <li><a href="#servicios"> Servicios</a></li>
+        <li><a href="#contacto"> Contacto</a></li>
+       </ul>
+    </nav>
+
+
+    <section>
+        <div id="botas" class="foto">
+            <img src="imagenes/images.jpg" width="100%" alt="">
+        
+        <div class="texto1">
+            <h2>Botas</h2>
+        </div>
+        <div class="texto2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, <br>
+                 necessitatibus, illo dolorem eos voluptatem quam nulla consectetur voluptas nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, impedit dignissimos. Numquam maiores provident sequi quos magni autem fugiat,
+                  soluta eaque consequatur repellat ipsam consectetur distinctio vero vitae ab ducimus.</p>
+        </div>
+    
+    
+    </section>
+    
+</div>
+    
+</body>
+
+</html>
